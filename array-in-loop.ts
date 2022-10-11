@@ -1,3 +1,4 @@
+// Remove all the vowel letters and return it.
 const removeVowels = (str) => {
   const letterArray = str.split("");
 
@@ -7,11 +8,10 @@ const removeVowels = (str) => {
 
   for (let i = 0; i < letterArray.length; i++) {
     if (!letterArray[i].includes(vowels)) {
-      console.log(i);
-      letterArraWithoutVowels.push[i];
+      letterArraWithoutVowels.push(letterArray[i]);
     }
-    return letterArraWithoutVowels.join("");
   }
+  return letterArraWithoutVowels.join("");
 };
 
 const str = "nimeshikamaduwanthi";
