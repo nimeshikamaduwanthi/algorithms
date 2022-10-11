@@ -4,17 +4,17 @@ const removeVowels = (str) => {
 
   const vowels = ["a", "e", "i", "o", "u"];
 
-  const letterArraWithoutVowels = [];
+  let letterArraWithoutVowels = [];
 
   for (let i = 0; i < letterArray.length; i++) {
-    if (!letterArray[i].includes(vowels)) {
+    if (!vowels.includes(letterArray[i])) {
       letterArraWithoutVowels.push(letterArray[i]);
     }
   }
   return letterArraWithoutVowels.join("");
 };
 
-const str = "nimeshikamaduwanthi";
+const str = "nimeshika maduwanthi";
 
 const results = removeVowels(str);
 
